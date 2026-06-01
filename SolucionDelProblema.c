@@ -1,7 +1,7 @@
 /*
 Autor:Carlos Salazar
 Fecha de entrega: 31/05/2026
-Descripción:
+Descripción: Codigo en C que permite a una escuela ingresar las notas de los estudiantes que requieran para tres asignaturas en especifico y con un amplio conocimiento de promedios, notas mas altas y bajas, entre otras.
 */
 
 #include <stdio.h>
@@ -39,7 +39,7 @@ printf("\n========== PROMEDIO POR ESTUDIANTE ==========\n");
             suma += notas[i][j];
         }
         printf("Estudiante %d: %.2f\n", i + 1, suma / 3);
-    }
+    
 printf("\n========== PROMEDIO POR ASIGNATURA ==========\n"); 
     for (j = 0; j < 3; j++) {
         suma = 0;
@@ -48,7 +48,7 @@ printf("\n========== PROMEDIO POR ASIGNATURA ==========\n");
             suma += notas[i][j];
         }
         printf("Asignatura %d: %.2f\n", j + 1, suma / estudiantes);
-    }
+    
 printf("\n========== MAYOR Y MENOR POR ESTUDIANTE ==========\n");
     for (i = 0; i < estudiantes; i++) {
         float mayor = notas[i][0];
