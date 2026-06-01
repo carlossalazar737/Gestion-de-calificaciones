@@ -32,6 +32,7 @@ int main(int crgc, char *argv[]){
             } while (notas[i][j] < 0 || notas[i][j] > 10);
         }
     }
+printf("\n========== PROMEDIO POR ESTUDIANTE ==========\n");
     for (i = 0; i < estudiantes; i++) {
         suma = 0;
         for (j = 0; j < 3; j++) {
@@ -39,6 +40,7 @@ int main(int crgc, char *argv[]){
         }
         printf("Estudiante %d: %.2f\n", i + 1, suma / 3);
     }
+printf("\n========== PROMEDIO POR ASIGNATURA ==========\n"); 
     for (j = 0; j < 3; j++) {
         suma = 0;
         for (i = 0; i < estudiantes; i++)
@@ -47,6 +49,7 @@ int main(int crgc, char *argv[]){
         }
         printf("Asignatura %d: %.2f\n", j + 1, suma / estudiantes);
     }
+printf("\n========== MAYOR Y MENOR POR ESTUDIANTE ==========\n");
     for (i = 0; i < estudiantes; i++) {
         float mayor = notas[i][0];
         float menor = notas[i][0];
@@ -64,6 +67,7 @@ int main(int crgc, char *argv[]){
         printf("Estudiante %d -> Mayor: %.2f | Menor: %.2f\n",
                i + 1, mayor, menor);
     }
+printf("\n========== DATOS POR ASIGNATURA ==========\n");
     for (j = 0; j < 3; j++) {
         float mayor = notas[0][j];
         float menor = notas[0][j];
